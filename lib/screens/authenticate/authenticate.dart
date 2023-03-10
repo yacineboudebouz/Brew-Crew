@@ -1,3 +1,4 @@
+import 'package:brew_crew2/screens/authenticate/register.dart';
 import 'package:brew_crew2/screens/authenticate/sign_in.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,6 @@ class Authnticate extends StatefulWidget {
 class _AuthnticateState extends State<Authnticate> {
   @override
   Widget build(BuildContext context) {
-    return SignIn();
+    return Register();
   }
 }
