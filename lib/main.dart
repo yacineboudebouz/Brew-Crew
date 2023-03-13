@@ -22,8 +22,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: StreamProvider<MyUser?>.value(
-        catchError: (_, __) => null,
+          catchError: (_, __) => null,
           value: AuthService().user,
           initialData: null,
           child: MaterialApp(
