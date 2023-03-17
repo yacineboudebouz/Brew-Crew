@@ -1,4 +1,5 @@
 import 'package:brew_crew2/models/brew.dart';
+import 'package:brew_crew2/screens/home/settings_form.dart';
 import 'package:brew_crew2/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -19,7 +20,7 @@ class Home extends StatelessWidget {
           builder: ((context) {
             return Container(
               padding: EdgeInsets.symmetric(vertical: 20.2, horizontal: 60.0),
-              child: Text('Bottom sheet'),
+              child: SettingsForm(),
             );
           }));
     }
@@ -41,7 +42,8 @@ class Home extends StatelessWidget {
                 },
                 icon: Icon(Icons.person_remove)),
             IconButton(
-                onPressed: () => _showSettingsPanel(), icon: Icon(Icons.settings))
+                onPressed: () => _showSettingsPanel(),
+                icon: Icon(Icons.settings))
           ],
         ),
         body: BrewList(),
