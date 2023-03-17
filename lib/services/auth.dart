@@ -50,7 +50,7 @@ class AuthService {
           email: email, password: password);
       User user = result.user!;
       await DatabaseService(uid: user.uid)
-          .updateUserData('0', 'new crew member', 100);
+          .updateUserData('0', 'new crew member3', 100);
       return _userfromFirebase(user);
     } catch (e) {
       print(e.toString());
