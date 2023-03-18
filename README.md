@@ -1,6 +1,6 @@
-# brew_crew2
+# brew_crew
 
-A new Flutter project.
+A new Flutter project to master using firebase with flutter
 
 ## Getting Started
 
